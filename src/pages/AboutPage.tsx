@@ -13,7 +13,7 @@ interface WaveformPlayerProps {
 function WaveformPlayer({ src, totalSeconds, label, sublabel, photoSrc }: WaveformPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const animRef = useRef<number | null>(null)
+
   const waveDataRef = useRef<number[]>([])
   const [playing, setPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
